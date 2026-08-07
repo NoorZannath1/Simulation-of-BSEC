@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller.CMO_Goal_3_ProcessIPOComplaintController">
+   <children>
+      <Text layoutX="204.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROCESS IPO RELATED COMPLAINT" />
+      <Text layoutX="72.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint ID:" />
+      <Text layoutX="72.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscription Status:" />
+      <Text layoutX="72.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IPO Details:" />
+      <TextField fx:id="ComplaintIDTextField" layoutX="170.0" layoutY="100.0" prefHeight="25.0" prefWidth="327.0" />
+      <TextField fx:id="IPODetailsTextField" layoutX="170.0" layoutY="169.0" prefHeight="25.0" prefWidth="327.0" />
+      <Label fx:id="SubscriptionStatusLabel" layoutX="204.0" layoutY="238.0" />
+      <Button layoutX="204.0" layoutY="295.0" mnemonicParsing="false" onAction="#VerifySubscriptionButton" prefHeight="25.0" prefWidth="191.0" text="Verify Subscription" />
+   </children>
+</AnchorPane>

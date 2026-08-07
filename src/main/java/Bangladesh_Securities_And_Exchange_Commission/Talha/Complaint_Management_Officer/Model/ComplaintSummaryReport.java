@@ -1,4 +1,4 @@
 package Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Model;
 
-public class Complaint_Management_Officer {
+public class ComplaintSummaryReport {
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller.CMO_Goal_1_RegisterComplaintController">
+   <children>
+      <Text layoutX="217.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER NEW COMPLAINT" wrappingWidth="151.232421875" />
+      <Text layoutX="58.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BO Account Number:" wrappingWidth="136.13671875" />
+      <Text layoutX="55.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" />
+      <Text layoutX="59.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details:" />
+      <Text layoutX="55.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anonymous Complaint:" />
+      <TextField fx:id="BOAccountNumberTextField" layoutX="217.0" layoutY="95.0" prefHeight="25.0" prefWidth="241.0" />
+      <ComboBox fx:id="CategoryComboBox" layoutX="217.0" layoutY="138.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField fx:id="DetailsTextField" layoutX="217.0" layoutY="179.0" prefHeight="25.0" prefWidth="241.0" />
+      <CheckBox fx:id="AnonymousComplaintCheckBox" layoutX="217.0" layoutY="226.0" mnemonicParsing="false" />
+      <Button layoutX="203.0" layoutY="276.0" mnemonicParsing="false" onAction="#RegisterComplaintButton" prefHeight="25.0" prefWidth="194.0" text="Register Complaint" />
+   </children>
+</AnchorPane>

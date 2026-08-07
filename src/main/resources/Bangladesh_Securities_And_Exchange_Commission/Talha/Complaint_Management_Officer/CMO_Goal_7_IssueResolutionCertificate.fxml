@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller.CMO_Goal_7_IssueResolutionCertificateController">
+   <children>
+      <Text layoutX="211.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISSUE RESOLUTION CERTIFICATE" wrappingWidth="177.47003173828125" />
+      <Text layoutX="74.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint ID:" />
+      <Text layoutX="65.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certificate ID:" />
+      <Text layoutX="72.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Decision Type:" />
+      <Text layoutX="72.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date:" />
+      <TextField fx:id="ComplaintIDTextField" layoutX="173.0" layoutY="88.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="DecisionTypeComboBox" layoutX="173.0" layoutY="135.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="IssueDateDatePicker" layoutX="173.0" layoutY="188.0" />
+      <TextField fx:id="CertificateIDTextfield" layoutX="173.0" layoutY="245.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button layoutX="222.0" layoutY="298.0" mnemonicParsing="false" onAction="#IssueCertificateButton" prefHeight="25.0" prefWidth="155.0" text="Issue Certificate" />
+   </children>
+</AnchorPane>

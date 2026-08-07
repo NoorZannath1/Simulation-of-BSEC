@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Compliance_Officer.Controller.CO_Goal_8_ConductInspectionController">
+   <children>
+      <Text layoutX="210.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conduct Compliance Inspection" />
+      <Text layoutX="74.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommendation:" />
+      <Text layoutX="74.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Type:" />
+      <Text layoutX="71.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Name:" />
+      <TextField fx:id="TargetNameTextField" layoutX="177.0" layoutY="85.0" prefHeight="25.0" prefWidth="356.0" />
+      <TextField fx:id="RecommendationTextField" layoutX="177.0" layoutY="187.0" prefHeight="25.0" prefWidth="356.0" />
+      <Button layoutX="210.0" layoutY="247.0" mnemonicParsing="false" onAction="#SubmitInspectionButton" prefHeight="25.0" prefWidth="214.0" text="Submit Inspection" />
+      <ComboBox fx:id="TargetTypeComboBox" layoutX="177.0" layoutY="137.0" prefHeight="25.0" prefWidth="356.0" />
+   </children>
+</AnchorPane>

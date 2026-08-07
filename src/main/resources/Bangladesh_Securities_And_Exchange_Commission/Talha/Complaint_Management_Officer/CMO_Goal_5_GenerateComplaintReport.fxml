@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller.CMO_Goal_5_GenerateComplaintReportController">
+   <children>
+      <Text layoutX="184.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERATE COMPLAINT SUMMARY REPORT" />
+      <Text layoutX="65.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reporting Period:" />
+      <Text layoutX="65.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Complaints:" />
+      <Text layoutX="65.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolution Rate:" />
+      <ComboBox fx:id="ReportingPeriodComboBox" layoutX="184.0" layoutY="95.0" prefHeight="25.0" prefWidth="311.0" />
+      <Label fx:id="TopComplaintsLabel" layoutX="190.0" layoutY="142.0" prefHeight="17.0" prefWidth="135.0" text="...." />
+      <Label fx:id="ResolutionRateLabel" layoutX="184.0" layoutY="178.0" prefHeight="17.0" prefWidth="135.0" text="...." />
+      <TableView fx:id="TableView" layoutX="57.0" layoutY="209.0" prefHeight="117.0" prefWidth="449.0">
+        <columns>
+          <TableColumn fx:id="TopIssueTableColumn" prefWidth="156.0" text="Top Issue" />
+        </columns>
+      </TableView>
+      <Button layoutX="236.0" layoutY="345.0" mnemonicParsing="false" onAction="#GenerateReportButton" prefHeight="25.0" prefWidth="127.0" text="Generate Report" />
+   </children>
+</AnchorPane>

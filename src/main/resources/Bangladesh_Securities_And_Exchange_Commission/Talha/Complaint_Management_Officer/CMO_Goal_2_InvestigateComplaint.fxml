@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller.CMO_Goal_2_InvestigateComplaintController">
+   <children>
+      <Text layoutX="231.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVESTIGATE COMPLAINT" />
+      <Text layoutX="67.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint ID:" />
+      <Text layoutX="67.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trade Record Ref:" />
+      <Text layoutX="53.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ownership Record Ref:" />
+      <Text layoutX="56.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surveillance Findings:" />
+      <Text layoutX="51.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investigation Summary:" />
+      <TextField fx:id="ComplaintIdTextField" layoutX="191.0" layoutY="83.0" prefHeight="25.0" prefWidth="251.0" />
+      <TextField fx:id="InvestigationSummaryTextField" layoutX="191.0" layoutY="251.0" prefHeight="25.0" prefWidth="251.0" />
+      <TextField fx:id="SurveillanceFindingsTextField" layoutX="191.0" layoutY="208.0" prefHeight="25.0" prefWidth="251.0" />
+      <TextField fx:id="OwnershipRecordRefTextField" layoutX="191.0" layoutY="169.0" prefHeight="25.0" prefWidth="251.0" />
+      <TextField fx:id="TradeRecordRefTextField" layoutX="191.0" layoutY="126.0" prefHeight="25.0" prefWidth="251.0" />
+      <Button layoutX="220.0" layoutY="308.0" mnemonicParsing="false" onAction="#InvestigateComplaintButton" prefHeight="25.0" prefWidth="159.0" text="Investigate Complaint" />
+   </children>
+</AnchorPane>

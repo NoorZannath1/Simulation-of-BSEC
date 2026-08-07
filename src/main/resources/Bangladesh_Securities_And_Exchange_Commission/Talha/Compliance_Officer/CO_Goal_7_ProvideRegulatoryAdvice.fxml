@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Compliance_Officer.Controller.CO_Goal_7_ProvideRegulatoryAdviceController">
+   <children>
+      <Text layoutX="204.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROVIDE REGULATORY ADVICE" />
+      <Text layoutX="74.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Official Response:" />
+      <Text layoutX="79.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Query:" />
+      <TextField fx:id="OfficialResposeTextField" layoutX="183.0" layoutY="131.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="QueryTextField" layoutX="150.0" layoutY="78.0" prefHeight="25.0" prefWidth="263.0" />
+      <Button layoutX="210.0" layoutY="200.0" mnemonicParsing="false" onAction="#SubmitResponseButton" prefHeight="25.0" prefWidth="179.0" text="Submit Response" />
+   </children>
+</AnchorPane>

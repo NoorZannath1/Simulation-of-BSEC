@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Compliance_Officer.Controller.CO_Goal_2_ReviewViolationReportController">
+   <children>
+      <Text layoutX="237.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review Violation Report" />
+      <Text layoutX="72.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Violation ID:" />
+      <TextField fx:id="ViolationIDTextField" layoutX="202.0" layoutY="98.0" prefHeight="25.0" prefWidth="230.0" />
+      <Text layoutX="71.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evidence Ref:" />
+      <Text layoutX="71.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks:" />
+      <TextField fx:id="EvidenceRefTextField" layoutX="202.0" layoutY="147.0" prefHeight="25.0" prefWidth="230.0" />
+      <TextField fx:id="RemarksTextField" layoutX="202.0" layoutY="200.0" prefHeight="25.0" prefWidth="230.0" />
+      <Button layoutX="237.0" layoutY="268.0" mnemonicParsing="false" onAction="#SubmitReviewButton" prefHeight="25.0" prefWidth="135.0" text="Submit Review" />
+   </children>
+</AnchorPane>
