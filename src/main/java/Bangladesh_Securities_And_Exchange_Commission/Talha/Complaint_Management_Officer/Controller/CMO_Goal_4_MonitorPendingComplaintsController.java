@@ -1,7 +1,7 @@
 package Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Controller;
+import Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Model.Complaint;
 
-
-import Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint;
+import Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Model.Complaint;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;

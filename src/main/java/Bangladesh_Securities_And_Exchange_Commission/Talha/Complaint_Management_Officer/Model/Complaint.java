@@ -1,10 +1,10 @@
-package Bangladesh_Securities_And_Exchange_Commission.Talha;
+package Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management_Officer.Model;
 
 import java.time.LocalDate;
 
 public class Complaint {
     private String complaintId;
-    private String boAccountNumber;
+    private String boAccountNumber; // Foreign Field (FF <-- Investor)
     private String category;
     private String details;
     private boolean isAnonymous;
@@ -12,6 +12,9 @@ public class Complaint {
     private LocalDate submissionDate;
     private String documentRef;
 
+
+    public Complaint() {
+    }
 
     public Complaint(String complaintId, String boAccountNumber, String category, String details, boolean isAnonymous, String status, LocalDate submissionDate, String documentRef) {
         this.complaintId = complaintId;
@@ -23,6 +26,7 @@ public class Complaint {
         this.submissionDate = submissionDate;
         this.documentRef = documentRef;
     }
+
 
     public String getComplaintId() {
         return complaintId;
@@ -95,5 +99,9 @@ public class Complaint {
                 ", category='" + category + '\'' +
                 ", status='" + status + '\'' +
                 '}';
+    }
+
+    public void updateStatus(String newStatus) {
+        this.status = newStatus;
     }
 }

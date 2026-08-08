@@ -8,6 +8,9 @@ public abstract class Officer {
     protected String email;
     protected String department;
 
+    public Officer() {
+    }
+
     public Officer(String employeeId, String name, String username, String password, String email, String department) {
         this.employeeId = employeeId;
         this.name = name;
@@ -16,6 +19,7 @@ public abstract class Officer {
         this.email = email;
         this.department = department;
     }
+
 
     public String getEmployeeId() {
         return employeeId;
@@ -71,5 +75,16 @@ public abstract class Officer {
                 "employeeId='" + employeeId + '\'' +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public boolean login(String username, String password) {
+        if (this.username != null) {
+            if (this.password != null) {
+                if (this.username.equals(username)) {
+                    return this.password.equals(password);
+                }
+            }
+        }
+        return false;
     }
 }

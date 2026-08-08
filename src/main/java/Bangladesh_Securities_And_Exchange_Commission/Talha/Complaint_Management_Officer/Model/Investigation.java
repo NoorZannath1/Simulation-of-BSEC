@@ -3,9 +3,9 @@ package Bangladesh_Securities_And_Exchange_Commission.Talha.Complaint_Management
 public class Investigation {
     private String investigationId;
     private String complaintId;
-    private String ownershipRecordRef;   // comes from CDBLRepresentative (teammate's class)
-    private String tradeRecordRef;       // comes from HeadOfBrokerageHouse (teammate's class)
-    private String surveillanceFindings; // comes from MarketSurveillanceOfficer (teammate's class)
+    private String ownershipRecordRef;
+    private String tradeRecordRef;
+    private String surveillanceFindings;
 
     public Investigation(String investigationId, String complaintId, String ownershipRecordRef, String tradeRecordRef, String surveillanceFindings) {
         this.investigationId = investigationId;
@@ -61,5 +61,10 @@ public class Investigation {
                 "investigationId='" + investigationId + '\'' +
                 ", complaintId='" + complaintId + '\'' +
                 '}';
+    }
+
+    public String prepareSummary() {
+
+        return "";
     }
 }

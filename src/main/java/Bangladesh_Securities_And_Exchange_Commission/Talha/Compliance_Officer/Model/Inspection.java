@@ -6,6 +6,9 @@ public class Inspection {
     private String targetType;
     private String recommendation;
 
+    public Inspection() {
+    }
+
     public Inspection(String inspectionId, String targetName, String targetType, String recommendation) {
         this.inspectionId = inspectionId;
         this.targetName = targetName;
@@ -50,6 +53,14 @@ public class Inspection {
         return "Inspection{" +
                 "inspectionId='" + inspectionId + '\'' +
                 ", targetName='" + targetName + '\'' +
+                ", targetType='" + targetType + '\'' +
                 '}';
+    }
+
+    public String recommendedActions() {
+        if (recommendation == null) {
+            return "No recommendation recorded";
+        }
+        return recommendation;
     }
 }

@@ -1,9 +1,14 @@
+package Bangladesh_Securities_And_Exchange_Commission.Talha.Compliance_Officer.Model;
+
 public class IntermediaryApplication {
     private String applicationId;
     private String brokerageHouseName;
     private String documentRef;
     private String status;
     private String applicationType;
+
+    public IntermediaryApplication() {
+    }
 
     public IntermediaryApplication(String applicationId, String brokerageHouseName, String documentRef, String status, String applicationType) {
         this.applicationId = applicationId;
@@ -53,9 +58,17 @@ public class IntermediaryApplication {
         this.applicationType = applicationType;
     }
 
-
     @Override
     public String toString() {
-        return applicationId + " - " + brokerageHouseName + " [" + applicationType + "]";
+        return "IntermediaryApplication{" +
+                "applicationId='" + applicationId + '\'' +
+                ", brokerageHouseName='" + brokerageHouseName + '\'' +
+                ", applicationType='" + applicationType + '\'' +
+                '}';
+    }
+
+    public boolean approveOrReject(String decision) {
+        this.status = decision;
+        return true;
     }
 }
