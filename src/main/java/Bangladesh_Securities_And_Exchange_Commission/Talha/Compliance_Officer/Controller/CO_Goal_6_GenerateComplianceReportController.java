@@ -8,13 +8,13 @@ import javafx.scene.control.TextField;
 
 public class CO_Goal_6_GenerateComplianceReportController {
     @javafx.fxml.FXML
-    private TableColumn MajorIssueTableColumn;
+    private TableColumn<String, String> MajorIssueTableColumn;
     @javafx.fxml.FXML
     private TextField DepartmentDataSummaryTextField;
     @javafx.fxml.FXML
     private ComboBox<String> ReportingPeriodComboBox;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<String> TableView;
 
     @javafx.fxml.FXML
     public void GenerateReportButton(ActionEvent actionEvent) {

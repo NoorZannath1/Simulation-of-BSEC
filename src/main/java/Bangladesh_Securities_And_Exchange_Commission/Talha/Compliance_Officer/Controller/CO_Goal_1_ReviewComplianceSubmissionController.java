@@ -10,11 +10,11 @@ public class CO_Goal_1_ReviewComplianceSubmissionController {
     @javafx.fxml.FXML
     private TextField IssuerIDTextField;
     @javafx.fxml.FXML
-    private TableColumn SubmittedDocumentTableView;
+    private TableColumn<String, String> SubmittedDocumentTableView;
     @javafx.fxml.FXML
     private ComboBox<String> ActionsComboBox;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<String> TableView;
 
     @javafx.fxml.FXML
     public void RequestMoreInfoButton(ActionEvent actionEvent) {

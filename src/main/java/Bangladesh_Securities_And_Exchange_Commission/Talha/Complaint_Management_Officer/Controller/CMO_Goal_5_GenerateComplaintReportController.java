@@ -8,7 +8,7 @@ import javafx.scene.control.TableView;
 
 public class CMO_Goal_5_GenerateComplaintReportController {
     @javafx.fxml.FXML
-    private TableColumn TopIssueTableColumn;
+    private TableColumn<String, String> TopIssueTableColumn;
     @javafx.fxml.FXML
     private Label TopComplaintsLabel;
     @javafx.fxml.FXML
@@ -16,7 +16,7 @@ public class CMO_Goal_5_GenerateComplaintReportController {
     @javafx.fxml.FXML
     private Label ResolutionRateLabel;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<String> TableView;
 
     @javafx.fxml.FXML
     public void GenerateReportButton(ActionEvent actionEvent) {

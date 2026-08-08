@@ -10,8 +10,10 @@ public class Complaint {
     private boolean isAnonymous;
     private String status;
     private LocalDate submissionDate;
+    private String documentRef;
 
-    public Complaint(String complaintId, String boAccountNumber, String category, String details, boolean isAnonymous, String status, LocalDate submissionDate) {
+
+    public Complaint(String complaintId, String boAccountNumber, String category, String details, boolean isAnonymous, String status, LocalDate submissionDate, String documentRef) {
         this.complaintId = complaintId;
         this.boAccountNumber = boAccountNumber;
         this.category = category;
@@ -19,6 +21,7 @@ public class Complaint {
         this.isAnonymous = isAnonymous;
         this.status = status;
         this.submissionDate = submissionDate;
+        this.documentRef = documentRef;
     }
 
     public String getComplaintId() {
@@ -75,6 +78,14 @@ public class Complaint {
 
     public void setSubmissionDate(LocalDate submissionDate) {
         this.submissionDate = submissionDate;
+    }
+
+    public String getDocumentRef() {
+        return documentRef;
+    }
+
+    public void setDocumentRef(String documentRef) {
+        this.documentRef = documentRef;
     }
 
     @Override

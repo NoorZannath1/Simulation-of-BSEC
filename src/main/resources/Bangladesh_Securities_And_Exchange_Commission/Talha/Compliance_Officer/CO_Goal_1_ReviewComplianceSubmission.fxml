@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bangladesh_Securities_And_Exchange_Commission.Talha.Compliance_Officer.Controller.CO_Goal_1_ReviewComplianceSubmissionController">
    <children>
       <Text layoutX="130.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REVIEW CORPORATE GOVERNANCE COMPLIANCE SUBMISSION" />
@@ -16,7 +15,7 @@
       <TextField fx:id="IssuerIDTextField" layoutX="151.0" layoutY="92.0" prefHeight="25.0" prefWidth="278.0" />
       <TableView fx:id="TableView" layoutX="51.0" layoutY="135.0" prefHeight="133.0" prefWidth="461.0">
         <columns>
-          <TableColumn fx:id="SubmittedDocumentTableView" prefWidth="154.66665649414062" text="Submitted Document" />
+          <TableColumn fx:id="SubmittedDocumentTableColumn" prefWidth="154.66665649414062" text="Submitted Document" />
         </columns>
       </TableView>
       <ComboBox fx:id="ActionsComboBox" layoutX="215.0" layoutY="285.0" prefWidth="150.0" promptText="Actions" />
